@@ -1,0 +1,49 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  /* grid-gap: 50px; */
+}
+
+
+@media(max-width: 1070px) {
+  .tasks {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media(max-width: 756px) {
+  .tasks {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form {
+  display: flex;
+}
+
+.item-task {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.logo-title a {
+  color: #fff;
+  font-size: 27px;
+  text-decoration: none;
+  text-transform: none;
+}
